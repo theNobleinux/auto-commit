@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+cd ~/Desktop/auto-commit/ 
+
+echo "Auto commit: $(date)" >> local_log.txt
+echo " "
+
+
+#+++++++++++++++++++++++++++++
+#git commands in input order
+#++++++++++++++++++++++++++++++
+
+git add local_log.txt
+git commit -m 'auto commit daily'
+git push origin main
+
+
