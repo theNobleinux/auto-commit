@@ -5,10 +5,6 @@ cd /home/nobleinux/Desktop/auto-commit/
 
 export HOME=/home/nobleinux
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-export SSH_AUTH_SOCK=$(find /tmp/ssh-* -type s -user nobleinux 2>/dev/null | head -n 1)
-
-#export SSH_AUTH_SOCK=$(find /tmp/ssh-* -type s -user nobleinux 2>/dev/null | head -n 1)
-#export HOME=/home/nobleinux
 
 # pull changes from github first
 /usr/bin/git pull origin main
